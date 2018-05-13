@@ -1,0 +1,18 @@
+<hr>
+<h2>Databinding Excersize</h2>
+<hr>
+
+<label for="">Enter a username for  Two-way data binding field</label>
+<input 
+	type="text"
+	class="form-control"
+	[(ngModel)]="username">
+
+<p>{{ username }}</p>
+
+<button 
+class="btn btn-danger"
+[disabled]="username === ''"
+(click)="username = ''">Reset Name</button>
+
+<br><br><br>
