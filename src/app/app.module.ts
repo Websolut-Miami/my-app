@@ -9,6 +9,7 @@ import { ServersComponent } from './servers/servers.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { PracticeDirectivesComponent } from './practice-directives/practice-directives.component';
 
 const appRoutes: Routes = [
     { path: 'server', component: ServerComponent },
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
     ServerComponent,
     ServersComponent,
     DatabindingComponent,
-    HeaderComponent
+    HeaderComponent,
+    PracticeDirectivesComponent
   ],
   imports: [
     RouterModule,
