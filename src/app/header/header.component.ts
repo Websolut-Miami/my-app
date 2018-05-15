@@ -22,4 +22,13 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/servers']); 
   }
 
+  goToPracticeDirectives() {
+    this.router.navigate(['/practice-directives']); 
+  }
+
+  goToCookbook() {
+    this.router.navigate(['/cookbook']); 
+  }
+
+
 }

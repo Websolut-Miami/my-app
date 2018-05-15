@@ -10,6 +10,16 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { PracticeDirectivesComponent } from './practice-directives/practice-directives.component';
+import { CookbookComponent } from './cookbook/cookbook.component';
+import { ShoppingComponent } from './cookbook/shopping/shopping.component';
+import { RecipesComponent } from './cookbook/recipes/recipes.component';
+import { HeaderCookbookComponent } from './cookbook/header-cookbook/header-cookbook.component';
+import { RecipeListComponent } from './cookbook/recipes/recipe-list/recipe-list.component';
+import { RecipeItemComponent } from './cookbook/recipes/recipe-list/recipe-item/recipe-item.component';
+import { RecipeDetailsComponent } from './cookbook/recipes/recipe-details/recipe-details.component';
+import { ShoppingListComponent } from './cookbook/shopping/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './cookbook/shopping/shopping-edit/shopping-edit.component';
+
 
 const appRoutes: Routes = [
     { path: 'server', component: ServerComponent },
@@ -23,7 +33,16 @@ const appRoutes: Routes = [
     ServersComponent,
     DatabindingComponent,
     HeaderComponent,
-    PracticeDirectivesComponent
+    PracticeDirectivesComponent,
+    CookbookComponent,
+    ShoppingComponent,
+    RecipesComponent,
+    HeaderCookbookComponent,
+    RecipeListComponent,
+    RecipeItemComponent,
+    RecipeDetailsComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent
   ],
   imports: [
     RouterModule,
