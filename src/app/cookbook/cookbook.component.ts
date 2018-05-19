@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-cookbook',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CookbookComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goToShopping() {
+    this.router.navigate(['/cookbook/shopping']); 
+  }
+
+  goToRecipes() {
+    this.router.navigate(['/cookbook/recipes']); 
   }
 
 }

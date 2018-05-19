@@ -1,35 +1,72 @@
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">My App</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" (click)="goToServers()">Servers</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" (click)="goToDatabinding()">Databinding</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" (click)="goToPracticeDirectives()">Practice Directives</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" (click)="goToCookbook()">Cookbook</a>
-      </li>
-<!--       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li> -->
-    </ul>
+<nav class="navbar navbar-default">
+  
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a href="#" class="navbar-brand">My App</a>
+
+    </div>
+
+    <div id="navbar" class="collapse navbar-collapse">
+
+      <ul class="nav navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToServers()">Servers</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToDatabinding()">Databinding</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToPracticeDirectives()">Practice Directives</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToCookbook()">Cookbook</a>
+        </li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+
+          <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu">
+
+            <li>
+              <a href="#">Save Data</a>
+            </li>
+
+            <li>
+              <a href="#">Fetch Data</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+      </ul>
+
+    </div>
+
   </div>
+
 </nav>
+
+
+
+
+

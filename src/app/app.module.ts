@@ -19,6 +19,8 @@ import { RecipeItemComponent } from './cookbook/recipes/recipe-list/recipe-item/
 import { RecipeDetailsComponent } from './cookbook/recipes/recipe-details/recipe-details.component';
 import { ShoppingListComponent } from './cookbook/shopping/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './cookbook/shopping/shopping-edit/shopping-edit.component';
+import { CockpitComponent } from './databinding/cockpit/cockpit.component';
+import { ServerElementComponent } from './databinding/server-element/server-element.component';
 
 
 const appRoutes: Routes = [
@@ -42,7 +44,9 @@ const appRoutes: Routes = [
     RecipeItemComponent,
     RecipeDetailsComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     RouterModule,
