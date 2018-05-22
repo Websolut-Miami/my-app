@@ -6,6 +6,8 @@ import { ServersComponent } from './servers/servers.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PracticeDirectivesComponent } from './practice-directives/practice-directives.component';
 import { CookbookComponent } from './cookbook/cookbook.component';
+import { AssignmentsComponent } from './assignments/assignments.component';
+import { GameControlComponent } from './assignments/game-control/game-control.component';
 import { ShoppingComponent } from './cookbook/shopping/shopping.component';
 import { RecipesComponent } from './cookbook/recipes/recipes.component';
 import { RecipeDetailsComponent } from './cookbook/recipes/recipe-details/recipe-details.component';
@@ -19,6 +21,8 @@ const routes: Routes = [
   { path: 'databinding', component: DatabindingComponent },
   { path: 'practice-directives', component: PracticeDirectivesComponent },
   { path: 'cookbook', component: CookbookComponent },
+  { path: 'assignments', component: AssignmentsComponent },
+  { path: 'assignments/game-control-app', component: GameControlComponent },
   { path: 'cookbook/shopping', component: ShoppingComponent },
   { path: 'cookbook/recipes', component: RecipesComponent },
   { path: 'cookbook/recipes/recipe-details', component: RecipeDetailsComponent },

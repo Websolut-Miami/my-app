@@ -21,6 +21,11 @@ import { ShoppingListComponent } from './cookbook/shopping/shopping-list/shoppin
 import { ShoppingEditComponent } from './cookbook/shopping/shopping-edit/shopping-edit.component';
 import { CockpitComponent } from './databinding/cockpit/cockpit.component';
 import { ServerElementComponent } from './databinding/server-element/server-element.component';
+import { AssignmentsComponent } from './assignments/assignments.component';
+import { GameControlComponent } from './assignments/game-control/game-control.component';
+import { OddComponent } from './assignments/game-control/odd/odd.component';
+import { EvenComponent } from './assignments/game-control/even/even.component';
+import { ControlComponent } from './assignments/game-control/control/control.component';
 
 
 const appRoutes: Routes = [
@@ -46,7 +51,12 @@ const appRoutes: Routes = [
     ShoppingListComponent,
     ShoppingEditComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    AssignmentsComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent,
+    ControlComponent
   ],
   imports: [
     RouterModule,

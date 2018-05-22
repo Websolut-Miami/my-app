@@ -8,17 +8,15 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CookbookComponent implements OnInit {
 
+  loadedFeature = 'recipe';
+
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  goToShopping() {
-    this.router.navigate(['/cookbook/shopping']); 
-  }
-
-  goToRecipes() {
-    this.router.navigate(['/cookbook/recipes']); 
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
   }
 
 }

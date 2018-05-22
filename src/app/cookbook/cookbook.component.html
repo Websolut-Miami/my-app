@@ -2,9 +2,13 @@
 
   <div class="col-md-12">
 
-    <app-recipes></app-recipes>
+    <app-header-cookbook 
+    (featureSelected)="onNavigate($event)">
+    </app-header-cookbook>
 
-    <app-shopping></app-shopping>
+    <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+
+    <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
 
   </div>
   

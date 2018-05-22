@@ -30,5 +30,9 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/cookbook']); 
   }
 
+  goToAssignments() {
+    this.router.navigate(['assignments']);
+  }
+
 
 }
