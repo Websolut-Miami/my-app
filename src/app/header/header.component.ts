@@ -34,5 +34,9 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['assignments']);
   }
 
+  goToDirectives() {
+    this.router.navigate(['directives-deep-dive']);
+  }
+
 
 }

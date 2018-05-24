@@ -14,7 +14,7 @@ import { RecipeDetailsComponent } from './cookbook/recipes/recipe-details/recipe
 import { RecipeListComponent } from './cookbook/recipes/recipe-list/recipe-list.component';
 import { ShoppingListComponent } from './cookbook/shopping/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './cookbook/shopping/shopping-edit/shopping-edit.component';
-
+import { DirectivesDeepDiveComponent } from './directives-deep-dive/directives-deep-dive.component';
 
 const routes: Routes = [
   { path: 'servers', component: ServersComponent },
@@ -28,7 +28,8 @@ const routes: Routes = [
   { path: 'cookbook/recipes/recipe-details', component: RecipeDetailsComponent },
   { path: 'cookbook/recipes/recipe-list', component: RecipeListComponent },
   { path: 'cookbook/shopping/shopping-list', component: ShoppingListComponent },
-  { path: 'cookbook/shopping/shopping-edit', component: ShoppingEditComponent }
+  { path: 'cookbook/shopping/shopping-edit', component: ShoppingEditComponent },
+  { path: 'directives-deep-dive', component: DirectivesDeepDiveComponent }
 ];
 
 @NgModule({

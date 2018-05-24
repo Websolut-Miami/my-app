@@ -26,6 +26,10 @@ import { GameControlComponent } from './assignments/game-control/game-control.co
 import { OddComponent } from './assignments/game-control/odd/odd.component';
 import { EvenComponent } from './assignments/game-control/even/even.component';
 import { ControlComponent } from './assignments/game-control/control/control.component';
+import { DirectivesDeepDiveComponent } from './directives-deep-dive/directives-deep-dive.component';
+import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
+import { UnlessDirective } from './unless.directive';
 
 
 const appRoutes: Routes = [
@@ -56,7 +60,11 @@ const appRoutes: Routes = [
     GameControlComponent,
     OddComponent,
     EvenComponent,
-    ControlComponent
+    ControlComponent,
+    DirectivesDeepDiveComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   imports: [
     RouterModule,
