@@ -1,0 +1,80 @@
+* by default, all properties of components are only accesible inside the component. to make properties accessible by parent components, a 'declarator' is needed: @Input()
+
+* @Input needs to be imported from Angular core:
+'import { Component, OnInit, Input } from @angular/core;'
+
+* @Output needs to be declared to pass property out of component
+
+* to catch data use methodName($event)
+
+* EventEmitter<> is a generic type used to emit events to other components. Needs to be imported from angular/core. In between <> needs to define type of data to emit, and needs () at end. EX:
+-- serverCreated = 
+		new EventEmitter<{
+			serverName: string, 
+			serverContent: string
+		}>();
+
+** @Input makes properties bindable from outside (from parent)
+** @Output allows parent components to listen to events with 'EventEmitter'
+
+* Angular enforces style encapsulation by giving the same attr to all elements in a component.
+
+* To avoid encapsulation, add declaration in @Component:
+-- encapsulation: ViewEncapsulation.None
+-- Emulated is default
+
+* 'Local Reference' can be placed on ANY html element.
+-- EX: #serverNameInput
+
+* Local References can be used anywhere in your template, but NOT in typescript code.
+-- EX: add 'serverNameInput' to a click event
+
+* <ng-content></ng-content> is used to transfer content from main app to component
+
+
+** ngOnInit() {} is a lifecycle hook. there are two types of hook that are created by angular when a component is created:
+-- ngOnChanges: called after a bound input property changes.
+-- ngOnInit: called once the component is initialized, runs after the constructor.
+-- ngDoCheck: called during every change detection
+-- ngAfterContentInit: called after content (ng-content) has been projected into view.
+-- ngAfterContentChecked: called every tim the projected content has been checked.
+-- ngAfterViewInit: called after the component's view (and child views) has been initialized.
+-- ngAfterViewChecked: called every time the view (amd child views) have been checked.
+-- ngOnDestroy: called once the component is about to be destroyed.
+
+
+===============================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===============================
+
+#DIRECTIVES:
+-- Attribute Directives AND Structural Directives.
+-- Attribute directives sit on elements, and changes are only applied to element.
+-- Structural directives do the same but change the structure around the element, they can affect (add/remove) a whole DOM area.
+-- You can only have ONE STRUCTURAL DIR on an element!
+-- Angular RENDERER should be used for any DOM manipulations!
+-- Use @HostListener to react to USER EVENTS!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

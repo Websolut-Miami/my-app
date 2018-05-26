@@ -1,0 +1,45 @@
+* How to access links globally in Angular?
+-- Ex: declare router once and use the click event throughout different components.
+
+
+
+===============================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===============================
+
+PROJECT IDEAS:
+
+* Rebuild VHMIAMI 2018:
+-- application form
+-- user login/database
+-- dynamic product list with search filters
+
+** Rebuild AR Portfolio:
+-- blog integration
+-- contact form
+
+* Build Event Portal
+
+* MeetUp
+
+
+~~~~~~~~~
+
+PLAN:
+
+#SCHEDULE...
+- Arrive 30 minutes early on a daily basis to accomodate research time on the job.
+- Take one hour daily (4:00 - 5:00 PM) to study Angular/Javascript tutorials.
+- Work and study from home 2 additional hours on Mondays and Wednesdays. 6 hours Saturdays.
+
+#PROJECT...
+- Build a landing page portal with sign-up form and user authentication.
+- Main page pulling data from web service (considering news from TechCrunch), sortable with search filters.
+- Account page displaying user information
+- Blog page
+
+
+
+
+
+
